@@ -14,12 +14,23 @@
 
   <body>
     <div class="box">
-      <label for="cityName">Enter Your City/Town:</label><br />
-      <div class="search">
-        <input type="text" id="cityName" />
-        <a onclick="fetchWeather()"><i class="bi bi-search"></i></a>
+      <div class="intro">
+        <span class="weather-icon"><i class="bi bi-cloud-sun"></i></span>
+        <p class="eyebrow">YOUR DAILY FORECAST</p>
+        <h1>Weather, at a glance.</h1>
+        <p class="description">Find out what the sky has in store for your city.</p>
       </div>
+
+      <label for="cityName">Search for a city</label>
+      <div class="search">
+        <input type="text" id="cityName" placeholder="For example, Mumbai" />
+        <button type="button" onclick="fetchWeather()" aria-label="Search">
+          <i class="bi bi-search"></i>
+        </button>
+      </div>
+
       <div id="result"></div>
+      <p class="footer-note">A little forecast goes a long way.</p>
     </div>
 
     <script src="script.js"></script>
